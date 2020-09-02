@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen" id="screen">
+            <input type="text" id="data">
+            <button id="clr" class="clr-scr-btn" onclick="document.getElementById('data').value=''">CLR</button>
+        </div>
+        <div class="data-entry">
+            <button id="nine" value="9" onclick="typeHelper(this.value)">9</button>
+            <button id="eight" value="8" onclick="typeHelper(this.value)">8</button>
+            <button id="seven" value="7" onclick="typeHelper(this.value)">7</button>
+            <button id="add" value="+" onclick="typeHelper(this.value)">+</button>
+            <button id="six" value="6" onclick="typeHelper(this.value)">6</button>
+            <button id="five" value="5" onclick="typeHelper(this.value)">5</button>
+            <button id="four" value="4" onclick="typeHelper(this.value)">4</button>
+            <button id="subt" value="-" onclick="typeHelper(this.value)">-</button>
+            <button id="three" value="3" onclick="typeHelper(this.value)">3</button>
+            <button id="two" value="2" onclick="typeHelper(this.value)">2</button>
+            <button id="one" value="1" onclick="typeHelper(this.value)">1</button>
+            <button id="div" value="/" onclick="typeHelper(this.value)">÷</button>
+            <button id="mul" style="font-size:40px;" value="*" onclick="typeHelper(this.innerHTML)">*</button>
+            <button id="zero" value="0" onclick="typeHelper(this.value)">0</button>
+                <button id="dot" value="." onclick="typeHelper(this.value)">.</button>
+                <button id="=" value="=" onclick="calculate()">=</button>
+                <button id="clr" class="clr-scr-btn" onclick="backSpace()">C</button>
+        </div>
+    </div>
+    <script src="../app.js" defer></script>
+</body>
+</html>
